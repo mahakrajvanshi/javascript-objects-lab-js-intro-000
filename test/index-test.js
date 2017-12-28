@@ -22,7 +22,6 @@ describe('Objects', function() {
       updateObjectWithKeyAndValue1(obj, 'prop2', 2)
 
       expect(obj['prop2']).toBe(undefined)
-    })
   })
 
   describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
