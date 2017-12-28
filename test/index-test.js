@@ -15,13 +15,13 @@ describe('Objects', function() {
       })
     })
 
-  describe('updateObjectWithKeyAndValue1(object, key, value)', function() {
     it('it does not modify the original object, but rather returns a clone with the new data', function() {
       var obj = { prop: 1 }
 
-      updateObjectWithKeyAndValue1(obj, 'prop2', 2)
+      updateObjectWithKeyAndValue(obj, 'prop2', 2)
 
       expect(obj['prop2']).toBe(undefined)
+    })
   })
 
   describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
